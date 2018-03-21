@@ -9,6 +9,14 @@
   </head>
 
   <body>
+    <h1>The Spoon</h1>
+
     <%= yield %>
+
+    <p>A very simple footer</p>
+    <p>Now is <%= Time.now %><p>
+      <%= link_to "Know more about us", about_path %>
+<%= link_to "Discover all our restaurants", restaurants_path %>
+<%= link_to "Dishoom", restaurant_path(1) %>
   </body>
 </html>
